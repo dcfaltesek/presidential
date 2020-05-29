@@ -1,33 +1,27 @@
-Untitled
+Obama Sentiment Modeling
 ================
 
-## GitHub Documents
+'{r setup, include=FALSE} 
+knitr::opts\_chunk$set(echo = TRUE)
+pressy \<- read\_csv(“~/Documents/GitHub/presidential/pressy.csv”)
 
-This is an R Markdown format used for publishing markdown documents to
-GitHub. When you click the **Knit** button all R code chunks are run and
-a markdown file (.md) suitable for publishing to GitHub is generated.
+'
+
+## here is some stuff
+
+So this is where we will put our code.
 
 ## Including Code
 
-You can include R code in the document as follows:
+An importnat part of a markdown is that it inclues all your jazz.
 
-``` r
-summary(cars)
-```
-
-    ##      speed           dist       
-    ##  Min.   : 4.0   Min.   :  2.00  
-    ##  1st Qu.:12.0   1st Qu.: 26.00  
-    ##  Median :15.0   Median : 36.00  
-    ##  Mean   :15.4   Mean   : 42.98  
-    ##  3rd Qu.:19.0   3rd Qu.: 56.00  
-    ##  Max.   :25.0   Max.   :120.00
+`{r cars} summary(cars)`
 
 ## Including Plots
 
 You can also embed plots, for example:
 
-![](README_files/figure-gfm/pressure-1.png)<!-- -->
+`{r pressure, echo=FALSE} head(pressy)`
 
 Note that the `echo = FALSE` parameter was added to the code chunk to
 prevent printing of the R code that generated the plot.

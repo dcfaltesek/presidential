@@ -5,6 +5,8 @@ output: github_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+pressy <- read_csv("~/Documents/GitHub/presidential/pressy.csv")
+farewell <- read_csv("~/Documents/GitHub/presidential/farewell.csv")
 ```
 
 ## GitHub Documents
@@ -16,7 +18,7 @@ This is an R Markdown format used for publishing markdown documents to GitHub. W
 You can include R code in the document as follows:
 
 ```{r cars}
-summary(cars)
+summary(pressy)
 ```
 
 ## Including Plots
